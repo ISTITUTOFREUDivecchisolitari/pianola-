@@ -1,18 +1,5 @@
 # pianola-
 codice dell circuito                                                         video https://youtu.be/OtaCyTJjG3g
-// C++ code
-//
-/*
-  Keyboard
-
-  Plays a pitch that changes based on a changing
-  input circuit:
-  * 3 pushbuttons from +5V to analog in 0 through
-  3
-  * 3 10K resistors from analog in 0 through 3 to
-  ground
-  * 8-ohm speaker on digital pin 8
-*/
 
 int pos = 0;
 
@@ -42,5 +29,5 @@ void loop()
   if (digitalRead(A3) == HIGH) {
     tone(8,261, 100); 
   }
-  delay(10); // Delay a little bit to improve simulation performance
+  delay(10); // per appunto rendere meglio le note
 }
